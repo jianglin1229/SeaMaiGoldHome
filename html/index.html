@@ -60,14 +60,17 @@
             $wrap.attr("class","section-wrap").addClass(function() {
                 return "put-section-"+i;
             });
+
         };
         /*响应鼠标*/
         $wrap.one('mousewheel',mouse_);
         function mouse_(event){
+            console.log("up");
+            console.log(new Date());
             if(event.deltaY<0) {up()}
             else{down()}
             run();
-            setTimeout(function(){$wrap.one('mousewheel',mouse_)},1000)
+            setTimeout(function(){$wrap.one('mousewheel',mouse_)},1200)
         };
         /*响应键盘上下键*/
         $(document).one('keydown',k);
@@ -82,6 +85,7 @@
             };
             setTimeout(function(){$(document).one('keydown',k)},1000);
         }
+
     });
 
 </script>
