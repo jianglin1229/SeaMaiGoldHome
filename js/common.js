@@ -14,7 +14,6 @@ $(document).ready(function() {
                 }
             }
         }
-
         $(".navbar-nav li").removeClass("active");
         $(".navbar-nav li").eq(index).addClass("active");
 
