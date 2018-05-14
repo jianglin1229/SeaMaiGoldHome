@@ -21,9 +21,10 @@ $(document).ready(function() {
                 }
             }
         }
+        console.log($(".navbar-nav>li"));
 
         $(".navbar-nav li").removeClass("active");
-        $(".navbar-nav li").eq(index).addClass("active");
+        $(".navbar-nav>li").eq(index).addClass("active");
 
         $('.new').hover(function () {
             $('.dropdownUl').toggle();
