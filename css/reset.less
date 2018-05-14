@@ -46,6 +46,56 @@ html,body{
 .clear{
   zoom:1;
 }
-
+.navbar,.navbar-nav{
+  min-height:60px;
+  li>a{
+    height:60px;
+    padding-top: 20px;
+    color:#666;
+    font-size: 16px;
+  }
+}
+.navbar-default{
+  background: #fff;
+}
+#wrap{
+  min-height: ~"calc(100vh - 110px)";
+  background: #fff;
+}
+#footer {
+  height:60px;
+  padding-bottom: 0px;
+  background: #222;
+  color:#fff;
+  text-align: center;
+}
+#header{
+  height:60px;
+  .container{
+    height:100%;
+  }
+}
+.navChange{
+  opacity: .5;
+  transition: opacity 1s;
+  border-bottom: none;
+}
+.dropdownUl{
+  display: none;
+}
+.navbar-default .navbar-nav>li:hover>a,.navbar-default .navbar-nav>.active>a:hover{
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#114da4), to(#0475c4));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.navbar-default .navbar-nav>.active>a{
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#114da4), to(#0475c4));
+  -webkit-background-clip: text;
+  color: transparent;
+  border-bottom: 1px solid #114da4;
+}
+.logo{
+  margin-top: 5px;
+}
 
 

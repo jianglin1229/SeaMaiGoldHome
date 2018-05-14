@@ -17,10 +17,11 @@ $(document).ready(function() {
         $(".navbar-nav li").removeClass("active");
         $(".navbar-nav li").eq(index).addClass("active");
 
-        $(".navbar-nav li .dropdown-menu li").click(function (e) {
-            $(".navbar-nav li").removeClass("active");
-            $(e.currentTarget.parentNode.parentNode.parentNode).addClass("active");
-        })
+        // $(".navbar-nav li .dropdown-menu li").click(function (e) {
+        //     $(".navbar-nav li").removeClass("active");
+        //     $(e.currentTarget.parentNode.parentNode.parentNode).addClass("active");
+        // })
+        console.log(index)
     });
     $("#footer").load("footer.html");
 });
@@ -32,4 +33,8 @@ $(window).scroll(function() {
         current.removeClass("navChange");
         current = $(this);
     }
+});
+$('.new').click(function () {
+    console.log('111')
+    $('.dropdownUl').toggle();
 })
