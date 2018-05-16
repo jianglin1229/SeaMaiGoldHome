@@ -32,6 +32,10 @@ $(document).ready(function() {
 
     });
     $("#footer").load("footer.html");
+    //刷新返回顶部
+    setTimeout(function(){
+        window.scrollTo(0,0);
+    }, 50);
 });
 $(window).scroll(function() {
     if ($(window).scrollTop() >= 100) {
@@ -40,5 +44,5 @@ $(window).scroll(function() {
         var current = $("#header .navbar-default");
         current.removeClass("navChange");
         current = $(this);
-    }
+    };
 });
