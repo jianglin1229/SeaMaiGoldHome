@@ -26,6 +26,20 @@
 <div id="wrap">
     <div class="contactUs">
         <div id="allmap"></div>
+        <div class="all">
+           <div class="content">
+               <div>
+                   <img src="../images/text.png" alt="">
+               </div>
+               <div class="bottom">
+                   <p class="text">其他分公司地址</p>
+                   <p>麦金世纪科技有限公司</p>
+                   <p>地址：厦门市思明区软件园二期望海路59号之二5楼</p>
+                   <p>客服热线：0592-5590060</p>
+                   <p>邮箱：info@maykis.com</p>
+               </div>
+           </div>
+        </div>
     </div>
 </div>
 <div id="footer"></div>
@@ -45,9 +59,7 @@
 
     var map = new BMap.Map("allmap");
     window.map = map;
-    var point = new BMap.Point(114.430306, 30.468107);
-//    map.enableScrollWheelZoom(true);
-
+    var point = new BMap.Point(114.4302371929,30.4677880445);
     map.addControl(new BMap.NavigationControl());               // 添加平移缩放控件
     map.addControl(new BMap.ScaleControl());                    // 添加比例尺控件
     map.addControl(new BMap.OverviewMapControl());              //添加缩略地图控件
@@ -57,19 +69,30 @@
 
     map.setMapStyle({style:"grayscale"});
 
-    map.centerAndZoom(point, 17);
+    map.centerAndZoom(point, 15);
+    var opts = {
+        width : 200,     // 信息窗口宽度
+        height: 100,     // 信息窗口高度
+        title : "武汉海麦金科技有限公司" , // 信息窗口标题
+        enableMessage:true,//设置允许信息窗发送短息
+        message:""
+    }
+    var infoWindow = new BMap.InfoWindow("地址：武汉市江夏区金融港一路光谷智慧园1号楼1502号", opts);  // 创建信息窗口对象
 
-
-    //    30.4681070957,114.4303069303
-
+    map.openInfoWindow(infoWindow, point); //开启信息窗口
 
     setTimeout(function () {
+        $('.contactUs>.all').addClass("allTransition");
         map.clearOverlays();
         var marker = new BMap.Marker(point);  // 创建标注
-        map.addOverlay(marker);              // 将标注添加到地图中
+        map.addOverlay(marker);
+        map.centerAndZoom(point, 15);// 将标注添加到地图中
         map.panTo(point);
-    },500);
+        map.openInfoWindow(infoWindow,point);
 
+        //回到顶部
+        window.scrollTo(0, 0);
+    },500);
 
 
 </script>
