@@ -1,7 +1,6 @@
 body{
   position: relative;
   margin: 0;
-  overflow: hidden;
 }
 #wrap{
   background: #fff;
@@ -12,19 +11,12 @@ body{
     text-align: center;
   }
 }
-.section-wrap{ width:100%;min-height: ~"calc(100vh - 110px)";overflow:visible;transition:transform 1s cubic-bezier(0.86,0,0.03,1);}
+//.section-wrap{ width:100%;min-height: ~"calc(100vh - 110px)";overflow:visible;transition:transform 1s cubic-bezier(0.86,0,0.03,1);}
 .section-wrap .section{ position:relative; width:100%;  background-repeat:no-repeat;}
 .section-wrap .section-1{height:590px;}
 .section-wrap .section-2{ background-color:#ffffff;height:780px;}
 .section-wrap .section-3{ background-color:#ffffff;height:540px;}
-.section-wrap .section-4{ background-color:#f8f8f8;height:770px;}
-.section-wrap .section-5{}
-.put-section-0{ transform:translateY(0);-webkit-transform:translateY(0);}
-.put-section-1{ transform:translateY(-1 * 590px);-webkit-transform:translateY(-1 * 590px);}
-.put-section-2{ transform:translateY(-1 * 1370px);-webkit-transform:translateY(-1 * 1370px);}
-.put-section-3{ transform:translateY(-1 * 1910px);-webkit-transform:translateY(-1 * 1910px);}
-.put-section-4{ transform:translateY(calc(-1 * 2250px));-webkit-transform:translateY(calc(-1 * 2250px));}
-
+.section-wrap .section-4{ background-color:#f8f8f8;height:670px;}
 #myCarousel{
   img{
     width:100%;
@@ -33,8 +25,32 @@ body{
 .section-2{
   .all{
     width:100%;
-    height:70vh;
-    background: url("../images/border.png") no-repeat center;
+    height:66vh;
+    background: url("../images/border.png")no-repeat center;
+    background-size: 100%;
+    position: relative;
+    div{
+      &:first-child{
+        position: absolute;
+        top:35%;
+        left:10%;
+      }
+      &:nth-child(2){
+        position: absolute;
+        top:5%;
+        left:44%;
+      }
+      &:nth-child(3){
+        position: absolute;
+        top:30%;
+        right:12%;
+      }
+      &:last-child{
+        position: absolute;
+        top:66%;
+        left:44%;
+      }
+    }
   }
 }
 .section-3{
