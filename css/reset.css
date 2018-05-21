@@ -1,0 +1,224 @@
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: "Microsoft Yahei";
+}
+body:focus,
+div:focus,
+span:focus,
+header:focus,
+footer:focus,
+nav:focus,
+section:focus,
+aside:focus,
+article:focus,
+ul:focus,
+dl:focus,
+dt:focus,
+dd:focus,
+a:focus,
+p:focus,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+i:focus,
+b:focus,
+textarea:focus,
+button:focus,
+input:focus,
+select:focus,
+figure:focus,
+figcaption:focus {
+  outline: none;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f4f4f4;
+}
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+  -webkit-appearance: none;
+}
+textarea {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+.navbar,
+.navbar-nav {
+  min-height: 60px;
+}
+.navbar li > a,
+.navbar-nav li > a {
+  height: 60px;
+  padding-top: 20px;
+  color: #666;
+  font-size: 16px;
+}
+.navbar-default {
+  background: #fff;
+  border-bottom: none;
+}
+#wrap {
+  min-height: calc(100vh - 110px);
+  background: #fff;
+}
+#footer {
+  height: 320px;
+  padding-bottom: 0;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+#header {
+  height: 60px;
+}
+#header .container {
+  height: 100%;
+}
+.navChange {
+  opacity: .8;
+  transition: all 1s;
+  border-bottom: none;
+}
+.dropdownUl {
+  display: none;
+  width: 120px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+.dropdownUl li {
+  height: 40px;
+  line-height: 40px;
+}
+.dropdownUl li:first-child {
+  border-bottom: 1px solid #d7d7d7;
+}
+.dropdownUl li a {
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > li {
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav > li a {
+  color: #333;
+}
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#114da4), to(#0475c4));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.navbar-default .navbar-nav > .active > a {
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#114da4), to(#0475c4));
+  -webkit-background-clip: text;
+  color: transparent;
+  border-bottom: 1px solid #114da4;
+}
+.logo {
+  margin-top: 5px;
+}
+footer {
+  height: 240px;
+}
+footer .footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0;
+}
+footer .footer div {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #fff;
+}
+footer .footer div span {
+  margin-bottom: 25px;
+  height: 20px;
+  line-height: 20px;
+}
+footer .footer div span span {
+  font-size: 20px;
+}
+.footerTop {
+  font-size: 16px;
+  border-top: 1px solid #d7d7d7;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+}
+.footerTop a {
+  color: #333;
+  text-decoration: none;
+}
+.footerTop a span {
+  color: #999;
+}

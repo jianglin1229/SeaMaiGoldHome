@@ -1,0 +1,423 @@
+body {
+  position: relative;
+  margin: 0;
+}
+#wrap {
+  min-height: calc(100vh - 380px) !important;
+  background: #fff;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.title {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  padding: 60px 0;
+}
+.aboutUs .section1 img {
+  width: 100%;
+  height: 100%;
+}
+.aboutUs .section2 {
+  height: 650px;
+  background: #fff;
+}
+.aboutUs .section2 .all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+.aboutUs .section2 .all .left {
+  box-sizing: border-box;
+  width: 490px;
+  height: 440px;
+  position: relative;
+}
+.aboutUs .section2 .all .left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 0 40px 40px 0;
+}
+.aboutUs .section2 .all .left img:last-child {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  border: 15px solid #fff;
+  border-radius: 10px;
+}
+.aboutUs .section2 .all .left img:last-child:hover {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 5px;
+  z-index: 999;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+}
+.aboutUs .section2 .all .right {
+  max-width: calc(100vw - 950px);
+}
+.aboutUs .section2 .all .right p {
+  font-size: 16px;
+  color: #666;
+  letter-spacing: 2px;
+  text-indent: 2em;
+  line-height: 2;
+}
+.aboutUs .section3 {
+  height: 410px;
+  background: #f8f8f8;
+}
+.aboutUs .section3 .all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.aboutUs .section3 .all div {
+  width: 580px;
+  height: 200px;
+  border-radius: 5px;
+  background: #fff;
+}
+.aboutUs .section3 .all div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.aboutUs .section3 .all div p:first-child {
+  margin: 35px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+.aboutUs .section3 .all div p:last-child {
+  padding: 0 60px;
+  font-size: 16px;
+  color: #999;
+  line-height: 1.5;
+}
+.aboutUs .section3 .all .left {
+  margin-right: 40px;
+}
+.aboutUs .section4 {
+  height: 1170px;
+}
+.aboutUs .section4 div img {
+  width: 545px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.aboutUs .section4 div img:nth-child(2n) {
+  margin-left: 40px;
+}
+.productenter .section1 img {
+  width: 100%;
+}
+.productenter .section2 {
+  height: 320px;
+  background: #fff;
+}
+.productenter .section2 .all ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.productenter .section2 .all ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 360px;
+  height: 110px;
+  margin-right: 60px;
+}
+.productenter .section2 .all ul li:last-child {
+  margin-right: 0;
+}
+.productenter .section2 .all ul li .icons {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background-size: 100%;
+}
+.productenter .section2 .all ul li .icon1 {
+  background: url("../images/icon07.png") no-repeat center;
+}
+.productenter .section2 .all ul li .icon2 {
+  background: url("../images/icon09.png") no-repeat center;
+}
+.productenter .section2 .all ul li .icon3 {
+  background: url("../images/icon011.png") no-repeat center;
+}
+.productenter .section2 .all ul li .text {
+  width: 240px;
+}
+.productenter .section2 .all ul li .text p:first-child {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.productenter .section2 .all ul li .text p:last-child {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.8;
+}
+.productenter .section2 .all ul li:first-child:hover .icon1 {
+  background: url("../images/icon08.png") no-repeat center;
+}
+.productenter .section2 .all ul li:nth-child(2):hover .icon2 {
+  background: url("../images/icon010.png") no-repeat center;
+}
+.productenter .section2 .all ul li:nth-child(3):hover .icon3 {
+  background: url("../images/icon012.png") no-repeat center;
+}
+.productenter .section3 {
+  height: 600px;
+  background: #f8f8f8;
+}
+.productenter .section3 #myCarousel .carousel-indicators {
+  bottom: -40px;
+}
+.productenter .section3 #myCarousel .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #bbb;
+}
+.productenter .section3 #myCarousel .carousel-indicators .active {
+  width: 18px;
+  height: 18px;
+  background: #bbb;
+}
+.productenter .section3 #myCarousel .item > .all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.productenter .section3 #myCarousel .item > .all img {
+  width: 460px;
+  height: 270px;
+}
+.productenter .section3 #myCarousel .item > .all .tit {
+  font-size: 16px;
+  color: #666;
+  margin: 20px 0;
+  line-height: 1;
+}
+.productenter .section3 #myCarousel .item > .all p {
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 2px;
+  line-height: 3;
+}
+.productenter .section3 #myCarousel .item > .all .button1 {
+  margin-top: 30px;
+  width: 180px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  color: transparent;
+  background-clip: padding-box;
+  padding: 1px;
+}
+.productenter .section3 #myCarousel .item > .all .button1 a {
+  text-align: center;
+  font-size: 14px;
+  height: 39px;
+  line-height: 39px;
+  background: #fff;
+  display: block;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.productenter .section3 #myCarousel .item > .all .button1::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(#114da4, #0475c4);
+  content: '';
+  z-index: -1;
+  border-radius: 30px;
+}
+.productenter .section3 .all > div {
+  width: 680px;
+}
+.newsAndTrends .section1 img {
+  width: 100%;
+}
+.newsAndTrends .section2 #myTab {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+.newsAndTrends .section2 #myTab li {
+  font-size: 16px;
+  margin: 0 150px;
+}
+.newsAndTrends .section2 #myTab li a {
+  color: #333;
+}
+.newsAndTrends .section2 #myTab li.active a {
+  color: #0669ba;
+  border: none;
+  border-bottom: 1px solid #0669ba;
+}
+.newsAndTrends .section2 #myTab li:hover a {
+  background: #fff;
+  color: #0669ba;
+  border: none;
+  border-bottom: 1px solid #0669ba;
+  margin-bottom: 1px;
+}
+.newsAndTrends .section2 #myTabContent #industry,
+.newsAndTrends .section2 #myTabContent #company {
+  min-height: 300px;
+}
+.newsAndTrends .section2 #myTabContent #industry ul,
+.newsAndTrends .section2 #myTabContent #company ul {
+  margin: 30px 0;
+}
+.newsAndTrends .section2 #myTabContent #industry ul li,
+.newsAndTrends .section2 #myTabContent #company ul li {
+  height: 60px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #d7d7d7;
+}
+.newsAndTrends .section2 #myTabContent #industry ul li div,
+.newsAndTrends .section2 #myTabContent #company ul li div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+.newsAndTrends .section2 #myTabContent #industry ul li div a,
+.newsAndTrends .section2 #myTabContent #company ul li div a {
+  color: #666;
+  width: 800px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+.newsAndTrends .section2 #myTabContent #industry ul li div a:hover,
+.newsAndTrends .section2 #myTabContent #company ul li div a:hover {
+  color: #0669ba;
+}
+.newsAndTrends .section2 #myTabContent #industry ul li div img,
+.newsAndTrends .section2 #myTabContent #company ul li div img {
+  width: 14px;
+  height: 14px;
+  margin-right: 20px;
+}
+.newsDetails {
+  margin: 20px 0 60px;
+}
+.newsDetails .section1 {
+  border: 1px solid #d7d7d7;
+  padding-left: 0;
+  padding-right: 0;
+}
+.newsDetails .section1 div:first-child {
+  text-align: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.newsDetails .section1 div:first-child p {
+  color: #666;
+  font-size: 12px;
+}
+.newsDetails .section1 div:first-child p:first-child {
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.newsDetails .section1 div:last-child {
+  padding: 40px;
+  font-size: 14px;
+  color: #999;
+  line-height: 3;
+}
+.contactUs {
+  height: 100vh;
+  position: relative;
+}
+.contactUs #allmap {
+  height: 100vh;
+  width: 100%;
+}
+.contactUs .optionpanel {
+  margin: 10px;
+}
+.contactUs #r-result {
+  width: 100%;
+}
+.contactUs #r-result p {
+  margin: 5px 0 0 10px;
+}
+.contactUs .all {
+  background: #fff;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -335px;
+}
+.contactUs .all::before {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  left: -325px;
+  bottom: 0;
+  border-bottom: 100vh solid #fff;
+  border-left: 275px solid transparent;
+}
+.contactUs .all .content {
+  padding-right: 150px;
+  text-align: right;
+}
+.contactUs .all .content div {
+  padding: 120px 0;
+}
+.contactUs .all .content .bottom {
+  width: 350px;
+  position: absolute;
+  left: -132px;
+}
+.contactUs .all .content .bottom p {
+  font-size: 14px;
+  color: #999;
+  height: 40px;
+  line-height: 1;
+}
+.contactUs .all .content .bottom .text {
+  font-size: 16px;
+  color: #666;
+  border-bottom: 1px solid #666;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.contactUs .allTransition {
+  width: 370px;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 300ms;
+  transition-duration: 0.7s;
+  margin-right: 0;
+}
